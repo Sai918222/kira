@@ -1,0 +1,15 @@
+<form id="myForm" action="submit.php" method="post">
+  <!-- Your form fields go here -->
+</form>
+
+<a href="#" id="submitLink">Submit Form</a>
+
+document.getElementById("submitLink").addEventListener("click", function(e) {
+  e.preventDefault(); // Prevent the default link behavior
+
+  // Get the form element by its ID
+  var form = document.getElementById("myForm");
+
+  // Submit the form
+  form.submit();
+});
